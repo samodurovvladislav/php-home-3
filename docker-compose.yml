@@ -1,0 +1,37 @@
+version: '3.8'
+
+networks:
+  php_latest:
+    driver: bridge
+
+services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - "9000:8080"
+    networks:
+      - php_latest
+  db:
+    image: "postgres:latest"
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    ports:
+      - "5432:5432"
+    volumes: 
+      - ./postgres-data:/var/lib/postgresql/data
+    networks:
+      - php_latest
+  app:    
+    build: .docker
+    restart: always
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    networks:
+      - php_latest
+    depends_on:
+      - db
