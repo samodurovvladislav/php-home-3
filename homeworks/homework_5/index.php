@@ -2,7 +2,7 @@
 
 namespace php_latest\homeworks\homework_5;
 
-use php_latest\homeworks\User;
+use php_latest\homeworks\homework_5\User;
 use Exception;
 use InvalidArgumentException;
 
@@ -39,9 +39,5 @@ try{
 }
 
 echo "<br>";
-
-echo "<hr><br>";
-
-echo "<h2>Домашнє завдання № 6</h2>";
 
 echo "<hr><br>";

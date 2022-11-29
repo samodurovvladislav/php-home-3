@@ -6,7 +6,6 @@ trait Trait1{
 
     public function test(){
 
-        echo 1;
         return 1;
 
     }

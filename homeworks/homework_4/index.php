@@ -2,7 +2,7 @@
 
 namespace php_latest\homeworks\homework_4;
 
-use php_latest\homeworks\Color;
+use php_latest\homeworks\homework_4\Color;
 
 $Color = new Color(200, 200, 200);
 
