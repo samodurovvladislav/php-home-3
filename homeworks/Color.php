@@ -1,6 +1,6 @@
 <?php 
 
-namespace php_latest;
+namespace php_latest\homeworks;
 
 use InvalidArgumentException;
 
