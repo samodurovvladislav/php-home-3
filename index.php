@@ -53,4 +53,11 @@ echo "Отриманий синій: " . $mixedColor->getBlue() . "<br>";
 
 echo "<br>";
 
+$randomColor = Color::random();
+echo "<h2>Випадковий колір: </h2>";
+
+echo "червоний: " . $randomColor->getRed() . "<br>";
+echo "зелений: " . $randomColor->getGreen() . "<br>";
+echo "синій: " . $randomColor->getBlue() . "<br>";
+
 ?>
