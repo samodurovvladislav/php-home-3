@@ -1,0 +1,13 @@
+{
+    "name": "deploy/php-latest",
+    "authors": [
+        {
+            "name": "Vladislav Samodurov",
+            "email": "26804585+samodurovvladislav@users.noreply.github.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {"php_latest\\": "."}
+    }
+}
